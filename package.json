@@ -1,0 +1,16 @@
+{
+  "name": "chtn-vocabulary-server",
+  "version": "1.0.0",
+  "description": "Simple server for the CHTN Vocabulary",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "lokijs": "^1.3.11"
+  }
+}
