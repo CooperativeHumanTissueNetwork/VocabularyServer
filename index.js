@@ -13,7 +13,6 @@ server.get("/", (req, res) => {
 server.get("/compatibleWith", (req, res) => {
     let query = { compatible: { $all: JSON.parse(req.query.compatible) }};
     if (req.query.type) query.type = req.query.type;
-    console.log(JSON.stringify(query, 2));
     db.vocabulary.find(query).fetch((results) => {
         res.send(results);
     });
